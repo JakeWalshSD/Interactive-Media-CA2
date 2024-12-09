@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Walsh Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section bg-primary text-white text-center py-5">
+        <div class="container">
+            <div id="introText"></div>
+            <h1>Jake Walsh</h1>
+            <img src="/images/Myself.jpg" alt="Your Face" class="rounded-circle my-3" width="150" height="150">
+            <p class="lead"><strong>AI & Machine Learning Graduate | Data Analytics</strong></p>
+        </div>
+    </header>
+    <!-- Portfolio Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Portfolio Sections</h2>
+        <div id="portfolioAccordion">
+            <!-- Education Details -->
+            <div class="card">
+                <div class="card-header" id="headingEducation">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEducation" aria-expanded="true" aria-controls="collapseEducation">
+                            <strong>Education Details</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseEducation" class="collapse show" aria-labelledby="headingEducation" data-parent="#portfolioAccordion">
+                    <div class="card-body">
+                        <!-- College Education -->
+                        <h5 class="section-title">College Education</h5>
+                        <ul class="education-list">
+                            <li>
+                                <strong>Technological University Dublin</strong>  
+                                <p>BSc in AI & Machine Learning (2021 - Expected May 2024)</p>
+                                <p>Key Modules: Relational Databases, Cloud Computing, SQL Programming, Distributed Systems</p>
+                            </li>
+                            <li>
+                                <strong>Rathmines College</strong>  
+                                <p>Level 6 Certificate in Software Development (2020 - 2021)</p>
+                                <p>Focus: Object-Oriented Programming, Java, GUI Development, Databases</p>
+                            </li>
+                            <li>
+                                <strong>Greenhills College</strong>  
+                                <p>Level 5 Certificate in Software Development (Completed in 2020)</p>
+                            </li>
+                        </ul>
+                        <!-- Projects Section -->
+                        <h5 class="section-title mt-4">Projects</h5>
+                        <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#projectsCarousel" data-slide-to="1"></li>
+                                <li data-target="#projectsCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/cslinc.png" class="d-block w-100" alt="Project 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>CSLINC Research Project</h5>
+                                        <p>Developed dashboards and analyzed data to study teacher confidence, preformed data Analytics and machine learning</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/steam" class="d-block w-100" alt="Project 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Steam Game Analysis</h5>
+                                        <p>Analyzed trends using Python libraries (Pandas, NumPy) and built machine learning models for success prediction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Code Skills -->
+            <div class="card">
+                <div class="card-header" id="headingCodeSkills">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCodeSkills" aria-expanded="false" aria-controls="collapseCodeSkills">
+                            <strong>Code Skills</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseCodeSkills" class="collapse" aria-labelledby="headingCodeSkills" data-parent="#portfolioAccordion">
+                    <div class="card-body">
+                        <div id="codeSkillsAccordion">
+                            <!-- Languages -->
+                            <div class="card">
+                                <div class="card-header" id="headingLanguages">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link collapsed code-skill-btn" data-toggle="collapse" data-target="#collapseLanguages" aria-expanded="false" aria-controls="collapseLanguages">
+                                            Languages
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseLanguages" class="collapse" aria-labelledby="headingLanguages" data-parent="#codeSkillsAccordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Python <div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div></li>
+                                            <li>Java <div class="progress"><div class="progress-bar" style="width: 75%;">75%</div></div></li>
+                                            <li>JavaScript <div class="progress"><div class="progress-bar" style="width: 80%;">80%</div></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Data Tools -->
+                            <div class="card">
+                                <div class="card-header" id="headingDataTools">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link collapsed code-skill-btn"" data-toggle="collapse" data-target="#collapseDataTools" aria-expanded="false" aria-controls="collapseDataTools">
+                                            Data Tools
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseDataTools" class="collapse" aria-labelledby="headingDataTools" data-parent="#codeSkillsAccordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>SQL <div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div></li>
+                                            <li>Power BI <div class="progress"><div class="progress-bar" style="width: 70%;">70%</div></div></li>
+                                            <li>R <div class="progress"><div class="progress-bar" style="width: 65%;">65%</div></div></li>
+                                            <li>MATLAB <div class="progress"><div class="progress-bar" style="width: 60%;">60%</div></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IT Skills -->
+                            <div class="card">
+                                <div class="card-header" id="headingITSkills">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link collapsed code-skill-btn"" data-toggle="collapse" data-target="#collapseITSkills" aria-expanded="false" aria-controls="collapseITSkills">
+                                            IT Skills
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseITSkills" class="collapse" aria-labelledby="headingITSkills" data-parent="#codeSkillsAccordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>MS Excel <div class="progress"><div class="progress-bar" style="width: 95%;">95%</div></div></li>
+                                            <li>Git <div class="progress"><div class="progress-bar" style="width: 80%;">80%</div></div></li>
+                                            <li>Docker <div class="progress"><div class="progress-bar" style="width: 65%;">65%</div></div></li>
+                                            <li>Linux CLI <div class="progress"><div class="progress-bar" style="width: 70%;">70%</div></div></li>
+                                            <li>Tableau <div class="progress"><div class="progress-bar" style="width: 75%;">75%</div></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Work Experience -->
+            <div class="card">
+                <div class="card-header" id="headingWorkExperience">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseWorkExperience" aria-expanded="false" aria-controls="collapseWorkExperience">
+                            <strong>Work Experience</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseWorkExperience" class="collapse" aria-labelledby="headingWorkExperience" data-parent="#portfolioAccordion">
+                    <div class="card-body">
+                        <h5>Data Analytics Intern</h5>
+                        <ul>
+                            <li>Analyzed large datasets using Python and SQL.</li>
+                            <li>Created dashboards with Tableau to provide actionable insights.</li>
+                            
+                        </ul>
+                        <h5>Student Tutor</h5>
+                        <ul>
+                            <li>Mentored first and second-year students in programming basics.</li>
+                            <li>Mentored second-year students in mathimatics basics.</li>
+                        </ul>
+                        <!-- CV Download Link -->
+                        <div class="mt-4">
+                            <a href="assets/CV_Jake.pdf" download class="btn btn-primary">Download CV (PDF)</a><!--Download my CV because its better than reading it on this website-->
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <!-- Hobbies -->
+            <div class="card">
+                <div class="card-header" id="headingHobbies">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseHobbies" aria-expanded="false" aria-controls="collapseHobbies">
+                            <strong>Hobbies</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseHobbies" class="collapse" aria-labelledby="headingHobbies" data-parent="#portfolioAccordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Professional Hobbies -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Professional</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Participating in AI hackathons and data visualization projects.</li>
+                                            <li>Organizing e-sports events and competitions.</li>
+                                            <li>Engaging in team collaborations for coding challenges.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Personal Hobbies -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Personal</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Storytelling through D&D campaigns.</li>
+                                            <li>Reading sci-fi novels and watching tech documentaries.</li>
+                                            <li>Working towards fitness goals and outdoor activities like airsoft.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Goals -->
+            <div class="card">
+                <div class="card-header" id="headingGoals">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseGoals" aria-expanded="false" aria-controls="collapseGoals">
+                        <strong>Goals</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseGoals" class="collapse" aria-labelledby="headingGoals" data-parent="#portfolioAccordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Professional Goals -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Professional Goals</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Complete a Master's in Data Science to deepen knowledge.</li>
+                                            <li>Secure a position in a leading tech company focusing on AI innovation.</li>
+                                            <li>Contribute to open-source projects, especially in machine learning.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Personal Goals -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Personal Goals</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Maintain a consistent fitness routine to achieve health milestones.</li>
+                                            <li>Travel to at least five countries to experience diverse cultures.</li>
+                                            <li>Write and publish a guidebook for storytelling in D&D campaigns.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Contact Modal -->
+<section class="container text-center my-5">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Email: jakewalsh2019@gmail.com</p>
+                    <p>Phone: +353 857464025</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/jakewalsh" target="_blank">linkedin.com/in/jakewalsh</a></p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section> <!-- Couldn't get to run in my JS file but it seemed to good not to use when searching for dynamic js-->
+<script>
+  var i = 0;
+  var text = 'Welcome to my CV page';
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("introText").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 100);
+    }
+  }
+  window.onload = typeWriter;
+</script>
+
+</body>
+</html>
